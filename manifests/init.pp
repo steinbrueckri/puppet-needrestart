@@ -1,3 +1,4 @@
+# DOKU!
 class needrestart(
   $action         = $needrestart::params::action,
   $ignorelist     = $needrestart::params::ignorelist,
@@ -5,6 +6,7 @@ class needrestart(
   $package_name   = $needrestart::params::package_name,
 ) inherits needrestart::params {
 
-  include install
-  include config
+  class { 'needrestart::install':}
+  class { 'needrestart::config':}
+
 }

@@ -1,3 +1,4 @@
+#DOKU
 class needrestart::config inherits needrestart {
 
   file {'/etc/needrestart/needrestart.conf':
