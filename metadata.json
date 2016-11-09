@@ -1,12 +1,12 @@
 {
-  "name": "hetzner-needrestart",
-  "version": "0.1.1",
-  "author": "Hetzner (Pty) Ltd.",
-  "summary": "Manages automatic restarts via the Debian needrestart package",
+  "name": "z3rogate/needrestart",
+  "version": "0.1.0",
+  "author": "z3rogate",
+  "summary": null,
   "license": "Apache-2.0",
-  "source": "private",
-  "project_page": "https://github.com/hetznerZA/hetzner-needrestart",
-  "issues_url": "devops@hetzner.co.za",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
   ],
