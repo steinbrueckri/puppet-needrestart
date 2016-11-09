@@ -2,11 +2,12 @@
 # Overrides are managed by puppet
 
 $nrconf{override_rc} = {
-<% @ignorelist.each do | name, services | -%>
-    #<%= name %>
-<% services.sort.each do | service | -%>
-    q(^<%= service %>) => 0,
+<% if @ignorelist -%>
+  <% @ignorelist.each do | name, services | -%>
+        #<%= name %>
+  <% services.sort.each do | service | -%>
+      q(^<%= service %>) => 0,
+  <% end -%>
+  <% end -%>
 <% end -%>
-<% end -%>
-
 };
